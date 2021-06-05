@@ -9,46 +9,42 @@
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-wEmeIV1mKuiNpC+IOBjI7aAzPcEZeedi5yW5f2yOq55WWLwNGmvvx4Um1vskeMj0" crossorigin="anonymous">
     <!-- Mi CSS -->
     <link rel="stylesheet" href="css/estilos.css">
+    <link rel="stylesheet" href="css/fontello.css">
     <title>Pampa Verde | Nosotros </title>
 </head>
 
 <body>
 
-    <nav class="navbar navbar-expand-lg" id="barranav">
-        <div class="container-fluid ">
-            <img src="img/leaf.svg" alt="" width="30" height="24" class="d-inline-block align-text-top">
-            <a class="navbar-brand" href="index.html">PAMPA VERDE</a>
-            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-            <span class="navbar-toggler-icon"></span>
-          </button>
-            <div class="collapse navbar-collapse d-flex justify-content-center" id="navbarSupportedContent">
-                <ul class="nav justify-content-center">
-                    <li class="nav-item">
-                        <a class="nav-link active" aria-current="page" href="index.html">Inicio</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link active" aria-current="page" href="nosotros.html">Nosotros</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link active" aria-current="page" href="servicios.html">Servicios</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link active" aria-current="page" href="galeria.html">Galería</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link active" aria-current="page" href="contactenos.html">Contactenos</a>
-                    </li>
-            </div>
-    </nav>
-    <div class="card bg-dark text-white">
-        <img src="img/nosotros.jpg" class="card-img" alt="...">
-        <div class="card-img-overlay">
-            <h3 class="card-title ">"La comunicación efectiva comienza con la escucha" </h3>
+    <!-- Barra de navegación -->
+    <header>
+        <div class="header-container">
+            <h1>PAMPA VERDE</h1>
+            <input type="checkbox" id="menu-bar">
+            <label class="icon-menu" for="menu-bar"></label>
+            <nav class="menu">
+                <a href="index.html">Inicio</a>
+                <a href="nosotros.html">Nosotros</a>
+                <a href="servicios.html">Servicios</a>
+                <a href="galeria.html">Galería</a>
+                <a href="contactenos.html">Contáctenos</a>
 
 
+            </nav>
         </div>
-    </div>
+    </header>
 
+    <!-- Imagen con frase inspiradora -->
+    <main>
+        <section id="banner">
+            <img src="img/banner3.jpg" alt="">
+            <div class="container-banner">
+                <h2>"La comunicación efectiva comienza con la escucha"</h2>
+
+            </div>
+
+        </section>
+    </main>
+    <!-- Título presupuesto -->
     <div class="row">
         <div class="col-12"></div>
         <h5>Solicitá tu presupuesto</h5>
@@ -58,15 +54,12 @@
         <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Illum voluptatem, omnis assumenda pariatur commodi est non aliquid animi? Minima, praesentium. Illum voluptatem, omnis assumenda pariatur commodi est non aliquid animi? Minima, praesentium.
         </p>
     </div>
-
+    <!-- Formulario de contacto-->
     <div class="row contact content">
-        <div class="col-6">
-            <iframe class="contact__map img-fluid" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d13085.459230154891!2d-57.964527010917664!3d-34.92238668960367!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x95a2e62dd769b9d7%3A0x8e5a62b28764b5ef!2sCatedral%20de%20La%20Plata!5e0!3m2!1ses-419!2sar!4v1620488386792!5m2!1ses-419!2sar"
-                width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
-        </div>
-        <div class="col-6">
+
+        <div class="col-12 col-sm-12 col-md-12 col-lg-12 col-xl-6 col-xxl-6">
             <form class="form__contact">
-                <div class="col-md-12">
+                <div class="col-md-12 ">
                     <label for="validationCustom01" class="form-label">Nombre Completo o Razón Social</label>
                     <input type="text" class="form-control" id="validationCustom01" value="" required>
                     <div class="valid-feedback">
@@ -102,8 +95,14 @@
                     <label for="exampleFormControlTextarea1" class="form-label">Consulta</label>
                     <textarea class="form-control" id="exampleFormControlTextarea1" rows="3"></textarea>
                 </div>
-                <button type="submit" class="btn btn-primary">Enviar</button>
+                <button type="submit" class="enviar btn ">Enviar</button>
             </form>
+        </div>
+        <!-- Mapa de Google-->
+        <div class="map responsive col-12 col-sm-12 col-md-12 col-lg-12 col-xl-6 col-xxl-6">
+            <iframe src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d13085.976561942529!2d-57.9549004!3d-34.9191422!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0xf2b7861d3486b339!2sEspacio%20Weiaut!5e0!3m2!1ses-419!2sar!4v1622840798118!5m2!1ses-419!2sar" width="600"
+                height="450" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
+
         </div>
     </div>
     <div class="row">
@@ -111,6 +110,7 @@
         <h5></h5>
     </div>
 
+    <!-- Footer-->
     <footer class="real-footer">
         <div class="row">
             <div class="col  ">

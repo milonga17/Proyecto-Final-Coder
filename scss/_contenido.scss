@@ -1,6 +1,62 @@
+@import url('https://fonts.googleapis.com/css2?family=Barlow+Semi+Condensed&family=Open+Sans:wght@700&display=swap');
 * {
     margin: 0px;
     padding: 0px;
+}
+
+
+/* Banner inicio*/
+
+section {
+    width: 100%;
+    margin-bottom: 25px;
+}
+
+#banner {
+    margin-top: 50px;
+    position: relative;
+    .img {
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+        overflow: hidden;
+    }
+    .container-banner {
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translateX(-50%)translateY(-50%);
+        color: #fff;
+        .a {
+            width: 100px;
+            display: block;
+            color: #fff;
+            text-decoration: none;
+            padding: 10px;
+            margin-top: 10px;
+            border-radius: 3px solid #fff;
+        }
+    }
+    .a:hover {
+        background: rgba(51, 51, 51, 0.5);
+    }
+}
+
+.banner.contact.btn {
+    background: linear-gradient(15deg, rgba(95, 134, 60, 1) 0%, rgba(159, 191, 78, 1) 35%);
+    border-color: linear-gradient(15deg, rgba(95, 134, 60, 1) 0%, rgba(159, 191, 78, 1) 35%);
+    a {
+        color: #fff;
+    }
+}
+
+.card-img-top:hover {
+    -webkit-transform: scale(1.3);
+    transform: scale(1.3);
+}
+
+.card.h-100 {
+    overflow: hidden;
 }
 
 div.imagen.col.d-flex.justify-content-end {
@@ -26,13 +82,35 @@ a.contact.btn.btn-primary {
     }
 }
 
-.row.gallery {
-    margin: 1.5em;
-}
+
+/* Nosotros*/
 
 .row.nosotros.description {
     margin: 1.5em;
     text-align: center;
+}
+
+.valores.card.text-white.mb-3 {
+    background: linear-gradient(15deg, rgba(95, 134, 60, 1) 0%, rgba(159, 191, 78, 1) 35%);
+    align-items: center;
+}
+
+.cards.container {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    padding: 10px;
+    grid-gap: 10px;
+}
+
+.card-body {
+    h5 {
+        font-size: 2.5vw;
+        width: 100%;
+    }
+    p {
+        font-size: 1.5vw;
+        padding: 5px;
+    }
 }
 
 .row.nosotros.values {
@@ -42,20 +120,18 @@ a.contact.btn.btn-primary {
     }
 }
 
-.row.cards.values {
+p {
+    font-family: 'Barlow Semi Condensed', sans-serif;
+}
+
+.row.gallery {
     margin: 1.5em;
 }
+
+
+/* Servicios*/
 
 .row.row-cols-1.row-cols-md-3.g-4.services {
-    margin: 1.5em;
-}
-
-.row.contact.description {
-    margin: 1.5em;
-    text-align: center;
-}
-
-.row.contact.content {
     margin: 1.5em;
 }
 
@@ -68,5 +144,132 @@ a.contact.btn.btn-primary {
     h6 {
         font-size: 1.5em;
         margin-top: 7em;
+    }
+}
+
+
+/* Galería*/
+
+.gallery-container {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-auto-rows: 150px;
+    padding: 20px;
+    grid-gap: 10px;
+}
+
+.gallery__item {
+    position: relative;
+}
+
+.gallery__img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.gallery__tittle {
+    position: absolute;
+    bottom: 0;
+    color: white;
+    background: linear-gradient(rgba(95, 134, 60, 0.5), rgba(159, 191, 78, 1));
+    width: 100%;
+    margin: 0;
+    padding: 10px;
+    font-size: 1rem;
+}
+
+.gallery__item:nth-child(4) {
+    grid-column-start: span 2;
+}
+
+.gallery__item:nth-child(5) {
+    grid-row-start: span 2;
+}
+
+.gallery__item:nth-child(9) {
+    grid-column-start: span 2;
+}
+
+
+/* Contáctenos*/
+
+.row.contact.description {
+    margin: 1.5em;
+    text-align: center;
+}
+
+.row.contact.content {
+    margin: 1.5em;
+}
+
+.map.responsive {
+    overflow: hidden;
+}
+
+.enviar.btn {
+    background: linear-gradient(rgba(95, 134, 60, 0.5), rgba(159, 191, 78, 1));
+    margin-bottom: 30px;
+    color: #fff;
+    text-align: center;
+    font-weight: 600;
+    padding-left: 5vh;
+    padding-right: 5vh;
+}
+
+@media (min-width:768px) {
+    .gallery-container {
+        grid-template-columns: repeat(4, 1fr);
+    }
+    .gallery__item:nth-child(3) {
+        grid-column-start: span 2;
+    }
+    .gallery__item:nth-child(4) {
+        grid-column-start: span 3;
+    }
+    .gallery__item:nth-child(5) {
+        grid-row-start: span 3;
+    }
+    .gallery__item:nth-child(9) {
+        grid-column-start: span 3;
+    }
+    .enviar.btn {
+        background: linear-gradient(rgba(95, 134, 60, 0.5), rgba(159, 191, 78, 1));
+        margin-bottom: 30px;
+        padding-left: 72vh;
+        padding-right: 72vh;
+    }
+}
+
+@media (min-width:1024px) {
+    .banner.contact.btn {
+        margin-left: 40%;
+    }
+    .gallery-container {
+        grid-template-columns: repeat(5, 1fr);
+        width: 90%;
+        margin: auto;
+    }
+    .gallery__item:nth-child(1) {
+        grid-column-start: span 2;
+        grid-row-start: span 2;
+    }
+    .gallery__item:nth-child(4) {
+        grid-column-start: span 3;
+        grid-row-start: span 3;
+    }
+    .card-body {
+        h5 {
+            font-size: 1.5vw;
+            width: 100%;
+        }
+        p {
+            font-size: 1.2vw;
+            padding: 5px;
+        }
+    }
+    .enviar.btn {
+        padding-left: 44vh;
+        padding-right: 44vh;
     }
 }

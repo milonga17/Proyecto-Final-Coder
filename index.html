@@ -11,59 +11,53 @@
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-wEmeIV1mKuiNpC+IOBjI7aAzPcEZeedi5yW5f2yOq55WWLwNGmvvx4Um1vskeMj0" crossorigin="anonymous">
     <!-- Mi CSS -->
     <link rel="stylesheet" href="css/estilos.css">
+    <link rel="stylesheet" href="css/fontello.css">
+
     <!-- Iconos -->
     <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
     <title>Pampa Verde</title>
 </head>
 
 <body>
-    <nav class="navbar navbar-expand-lg" id="barranav">
-        <div class="container-fluid ">
-            <img src="img/leaf.svg" alt="" width="30" height="24" class="d-inline-block align-text-top">
-            <a class="navbar-brand" href="index.html">PAMPA VERDE</a>
-            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-            <span class="navbar-toggler-icon"></span>
-          </button>
-            <div class="collapse navbar-collapse d-flex justify-content-center" id="navbarSupportedContent">
-                <ul class="nav justify-content-center">
-                    <li class="nav-item">
-                        <a class="nav-link active" aria-current="page" href="index.html">Inicio</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link active" aria-current="page" href="nosotros.html">Nosotros</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link active" aria-current="page" href="servicios.html">Servicios</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link active" aria-current="page" href="galeria.html">Galería</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link active" aria-current="page" href="contactenos.html">Contactenos</a>
-                    </li>
-            </div>
-    </nav>
+    <!-- Barra de navegación -->
+    <header>
+        <div class="header-container">
+            <h1>PAMPA VERDE</h1>
+            <input type="checkbox" id="menu-bar">
+            <label class="icon-menu" for="menu-bar"></label>
+            <nav class="menu">
+                <a href="index.html">Inicio</a>
+                <a href="nosotros.html">Nosotros</a>
+                <a href="servicios.html">Servicios</a>
+                <a href="galeria.html">Galería</a>
+                <a href="contactenos.html">Contáctenos</a>
 
-    <div class="container-fluid ">
-        <div class="row ">
-            <div class="col home landing">
-                <h6>Brindamos servicios con altos estándares de calidad</h6>
-                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. </p>
-                <a class="contact btn btn-primary " href="contactenos.html" role="button">Solicitar presupuesto</a>
-            </div>
 
-            <div class="imagen  col d-flex justify-content-end  ">
-                <img class="rounded" src="img/home.jpg" alt="">
-            </div>
+            </nav>
         </div>
+    </header>
 
-        <div class="row">
-            <div class="col-12"></div>
-            <h5>Portafolio de Servicios</h5>
-        </div>
+    <!-- Banner -->
+    <main>
+        <section id="banner">
+            <img src="img/banner.jpg" alt="">
+            <div class="container-banner">
+                <h2>Brindamos servicios con altos estándares de calidad</h2>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Eligendi porro libero atque est nisi aut eveniet, magnam.</p>
+                <a class="banner contact btn " href="contactenos.html" role="button">Solicitar presupuesto</a>
+            </div>
+
+        </section>
+    </main>
+    <!-- Titulo cards algunos servicios -->
+    <div class="row">
+        <div class="col-12"></div>
+        <h5>Portafolio de Servicios</h5>
+    </div>
 
     </div>
     </div>
+    <!-- Cards algunos servicios -->
     <div class="row row-cols-1 row-cols-md-3 g-4 home services">
         <div class="col">
             <div class="card h-100">
@@ -101,7 +95,7 @@
         <div class="col-12 align-self-center"></div>
         <h5>Clientes que nos recomiendan</h5>
     </div>
-
+    <!-- Imagenes con texto y testimonios de clientes -->
     <div class="row">
         <div class="col-2">
 
@@ -136,6 +130,7 @@
 
 
     </div>
+    <!-- Footer -->
     <footer class="real-footer">
         <div class="row">
             <div class="col  ">
